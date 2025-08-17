@@ -1,7 +1,7 @@
 import ProductCard from "./productCard";
 import Products from "./products";
 import Categories from "./categories";
-import Curosle from "./Curosle";
+// import Curosle from "./Curosle";
 
 export default async function Content() {
   let data = await fetch('https://fakestoreapi.com/products')
@@ -18,7 +18,7 @@ export default async function Content() {
                 products
             </h2>
            
-           <Curosle data={data}/>
+           {/* <Curosle data={data}/> */}
         <div className="content">
           
           <Categories cat={categories}/>
