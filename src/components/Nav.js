@@ -2,6 +2,7 @@
 
 import Link from "next/link"
 import Categories from "./categories"
+import { useEffect } from "react"
 
 
 export default function Nav() {
