@@ -1,7 +1,10 @@
 "use client"
-import "bootstrap/dist/js/bootstrap.bundle.js"
+import { useEffect } from "react"
 
 export default function Curosle({data}) {
+   useEffect(() => {
+    import("bootstrap/dist/js/bootstrap.bundle.js")
+  }, [])
     return(
 <div id="carouselExampleCaptions" className= "w-100 carousel slide" data-bs-ride="carousel">
      <div className="carousel-indicators">
