@@ -21,7 +21,6 @@
         width: 150px;
         height: 200px;
         object-fit: contain;
-        transform: scale(1.5 1.5) !important
         ;
     };
     a{
