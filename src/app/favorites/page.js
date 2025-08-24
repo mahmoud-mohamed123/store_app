@@ -9,7 +9,7 @@ function Fav() {
     console.log(name.fav);
     
     return(
-        <div className="content">
+        <div className="content text-bg-dark">
             <div className="products">
             {name.fav.map((ob , e)=>{
                 return(

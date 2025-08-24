@@ -9,7 +9,7 @@ function cart() {
     console.log(ay.cartsobj);
     
     return(
-        <div className="content">
+        <div className="content text-bg-dark">
             <div className="products">
             {ay.cartsobj.map((obj , q)=>{
                 return(
