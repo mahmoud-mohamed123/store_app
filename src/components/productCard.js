@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { Fun } from "./buttons";
 import { Addtofav } from "./buttons";
-export default function ProductCard({object}) {
+export default function ProductCard({object, fav, cart}) {
     
     
     return(
@@ -23,8 +23,8 @@ export default function ProductCard({object}) {
                 <button>
                     add to favorites
                 </button> */}
-                <Fun object={object}></Fun>
-                <Addtofav/>
+                <Fun cart={cart} object={object}/>
+                <Addtofav fav={fav} object={object}/>
             </div>
         </div>
     )

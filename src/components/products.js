@@ -11,13 +11,13 @@ import { contextcat } from "@/app/context/context"
     let elements ;
     if (concat == "all") {
         elements = data.map(obj=>{
-            return  <ProductCard key={obj.id} object={obj}/>
+            return  <ProductCard fav={false} cart={false} key={obj.id} object={obj}/>
         })
     }
     else{
          elements = data.map(obj=>{
             if (concat == obj.category) {
-                return  <ProductCard key={obj.id} object={obj}/>
+                return  <ProductCard fav={false} cart={false} key={obj.id} object={obj}/>
             }
         })
     }

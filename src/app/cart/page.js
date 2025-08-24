@@ -13,7 +13,7 @@ function cart() {
             <div className="products">
             {ay.cartsobj.map((obj , q)=>{
                 return(
-                    <ProductCard key={q} object={obj}/>
+                    <ProductCard fav={false} cart={true} key={q} object={obj}/>
                 )
             })}
             </div>
